@@ -1,6 +1,7 @@
 package tests;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,6 +12,8 @@ import org.testng.annotations.Test;
 import repository.*;
 
 import java.util.concurrent.TimeUnit;
+
+import static java.lang.Boolean.FALSE;
 
 public class AddPostTest {
     public AppiumDriver<AndroidElement> driver;
@@ -29,15 +32,17 @@ public class AddPostTest {
         Thread.sleep(10000);
         signin.SignInWithEmail("tatsgaurav@gmail.com", "123456");
         Dashboard dash = new Dashboard(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(dash.PostsButton));
         dash.PostsButton.click();
-        Thread.sleep(10000);
+        Thread.sleep(30000);
     }
 
     @Test(description="Check Successful Add Offering.")
     public void postOffering() throws Exception {
         People people = new People(driver);
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
-
         WebDriverWait wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.visibilityOf(people.AddButton));
 
@@ -50,17 +55,23 @@ public class AddPostTest {
         Industry industry = new Industry(driver);
         industry.selectIndustry("Accounting");
         industry.ApplyButton.click();
+        TouchAction scroll = new TouchAction(driver);
+        scroll.longPress(post.TargetIndustriesSector).moveTo(50,50).release().perform();
         post.TargetLocationSelctor.click();
         Location location = new Location(driver);
         location.SearchLocation.setValue("Pune");
         location.SelectLocation.click();
+        Thread.sleep(3000);
         post.PostButton.click();
-        Assert.assertFalse(post.ErrorMessage.isDisplayed(),"Post Successful");
+        Assert.assertFalse(people.AddButton.isDisplayed(),"Post Successful");
     }
 
     @Test(description="Check Successful Add Requirement.")
     public void postRequirement() throws Exception {
         People people = new People(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(people.AddButton));
         people.AddButton.click();
         people.AddRequirementButton.click();
         AddPost post = new AddPost(driver);
@@ -70,10 +81,10 @@ public class AddPostTest {
         Industry industry = new Industry(driver);
         industry.selectIndustry("Accounting");
         industry.ApplyButton.click();
-        post.TargetLocationSelctor.click();
         Location location = new Location(driver);
         location.SearchLocation.setValue("Pune");
         location.SelectLocation.click();
+        Thread.sleep(3000);
         post.PostButton.click();
         Assert.assertFalse(post.ErrorMessage.isDisplayed(),"Post Successful");
     }
@@ -81,6 +92,9 @@ public class AddPostTest {
     @Test(description="Check Title length validation for 120 characters.")
     public void postTitle_Length_Is_Equals_To_Max() throws Exception {
         People people = new People(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(people.AddButton));
         people.AddButton.click();
         people.AddRequirementButton.click();
         AddPost post = new AddPost(driver);
@@ -95,6 +109,9 @@ public class AddPostTest {
     @Test(description="Check Title length validation for more than 120 characters.")
     public void postTitle_Length_Is_Not_More_Than_Max() throws Exception {
         People people = new People(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(people.AddButton));
         people.AddButton.click();
         people.AddRequirementButton.click();
         AddPost post = new AddPost(driver);
@@ -109,11 +126,14 @@ public class AddPostTest {
     @Test(description="Check Title length validation for less than 120 characters.")
     public void postTitle_Length_Is_Not_Less_Than_Max() throws Exception {
         People people = new People(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(people.AddButton));
         people.AddButton.click();
         people.AddRequirementButton.click();
         AddPost post = new AddPost(driver);
         post.PostTitle.setValue("12345678901234567890123456789012345678901234567890" +
-                "12345678901234567890123456789012345678901234567890123456789012345678901");
+                "123456789012345678901234567890123456789012345678901234567890123456789");
         Assert.assertTrue(post.PostTitle.getText().length()< 120,"Accepts less than 120 characters");
         post.BackButton.click();
         Thread.sleep(2000);
@@ -122,6 +142,9 @@ public class AddPostTest {
     @Test(description="Check Description length validation for 300 characters.")
     public void postDescription_Length_Is_Equals_To_Max() throws Exception {
         People people = new People(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(people.AddButton));
         people.AddButton.click();
         people.AddRequirementButton.click();
         AddPost post = new AddPost(driver);
@@ -129,7 +152,7 @@ public class AddPostTest {
                 "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890" +
                 "12345678901234567890123456789012345678901234567890" +
                 "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890");
-        Assert.assertTrue(post.PostTitle.getText().length()== 300,"Accepts 300 characters");
+        Assert.assertTrue(post.PostDescription.getText().length()== 300,"Accepts 300 characters");
         post.BackButton.click();
         Thread.sleep(2000);
         post.AlertYesButton.click();
@@ -138,6 +161,9 @@ public class AddPostTest {
     @Test(description="Check Description length validation for more than 300 characters.")
     public void postDescription_Length_Is_Not_More_Than_Max() throws Exception {
         People people = new People(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(people.AddButton));
         people.AddButton.click();
         people.AddRequirementButton.click();
         AddPost post = new AddPost(driver);
@@ -155,6 +181,9 @@ public class AddPostTest {
     @Test(description="Check Description length validation for less than 300 characters.")
     public void postDescription_Length_Is_Not_Less_Than_Max() throws Exception {
         People people = new People(driver);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait()
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOf(people.AddButton));
         people.AddButton.click();
         people.AddRequirementButton.click();
         AddPost post = new AddPost(driver);

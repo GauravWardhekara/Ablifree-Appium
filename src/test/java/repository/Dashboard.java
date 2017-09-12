@@ -34,6 +34,14 @@ public class Dashboard {
     public AndroidElement SharePofileButton;
 
     /**Nearby People button on Dashboard.*/
-    @AndroidFindBy(id = "com.bluemark.ablifree:id/ll_nearby_people")
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/iv_nearby_people")
     public AndroidElement NearbyPeopleButton;
+
+    /**Notification button on Dashboard.*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/iv_nearby_people")
+    public AndroidElement Notification;
+
+    /**Search button on Dashboard.*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/iv_search")
+    public AndroidElement Search;
 }

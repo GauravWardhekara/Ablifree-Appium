@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="062d4448-32bb-4126-b2b9-c9a3a940cdf2" name="Default" comment="Post Validations">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/repository/AddPost.class" afterPath="$PROJECT_DIR$/out/test/classes/repository/AddPost.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/tests/AddPostTest.class" afterPath="$PROJECT_DIR$/out/test/classes/tests/AddPostTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/tests/Demo.class" afterPath="$PROJECT_DIR$/out/test/classes/tests/Demo.class" />
+    <list default="true" id="062d4448-32bb-4126-b2b9-c9a3a940cdf2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/repository/AddPost.java" afterPath="$PROJECT_DIR$/src/test/java/repository/AddPost.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/repository/Dashboard.java" afterPath="$PROJECT_DIR$/src/test/java/repository/Dashboard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/repository/People.java" afterPath="$PROJECT_DIR$/src/test/java/repository/People.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/AddPostTest.java" afterPath="$PROJECT_DIR$/src/test/java/tests/AddPostTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/Demo.java" afterPath="$PROJECT_DIR$/src/test/java/tests/Demo.java" />
     </list>
@@ -68,24 +66,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="69" column="1" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="-467">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/repository/Dashboard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="People.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/repository/People.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-637">
+              <caret line="98" column="72" lean-forward="false" selection-start-line="98" selection-start-column="72" selection-end-line="98" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPostTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/AddPostTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="469">
+              <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignInValidations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/SignInValidations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JoinNowValidations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/JoinNowValidations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="66" column="39" lean-forward="false" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JoinNowTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/JoinNowTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="92" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,7 +155,7 @@
       <file leaf-file-name="AddPost.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/repository/AddPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="221">
               <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
@@ -549,7 +599,6 @@
         <option value="$PROJECT_DIR$/src/test/java/repository/MyFavourites.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/MyProfile.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/Notifications.java" />
-        <option value="$PROJECT_DIR$/src/test/java/repository/People.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/PostDetails.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/Profile.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/Settings.java" />
@@ -563,7 +612,6 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/DemoTwo.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/GetOTP.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/Location.java" />
-        <option value="$PROJECT_DIR$/src/test/java/repository/Dashboard.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/IndustrySelector.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/LaunchScreen.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/DriverInit.java" />
@@ -572,8 +620,10 @@
         <option value="$PROJECT_DIR$/src/test/java/repository/SinginScreen.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/Industry.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/AddPost.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/AddPostTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/repository/People.java" />
+        <option value="$PROJECT_DIR$/src/test/java/repository/Dashboard.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/Demo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/AddPostTest.java" />
       </list>
     </option>
   </component>
@@ -623,12 +673,6 @@
               <item name="Ablifree-Appium" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ablifree-Appium" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="Apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ablifree-Appium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ablifree-Appium" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Apps" type="462c0819:PsiDirectoryNode" />
-              <item name="Ablifree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ablifree-Appium" type="b2602c69:ProjectViewProjectNode" />
@@ -723,7 +767,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Demo">
+  <component name="RunManager" selected="TestNG.AddPostTest.postOffering">
     <configuration name="AddPostTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -788,7 +832,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="AddPostTest.postRequirement" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddPostTest.postTitle_Length_Is_Not_Less_Than_Max" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -801,7 +845,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AddPostTest" />
-      <option name="METHOD_NAME" value="postRequirement" />
+      <option name="METHOD_NAME" value="postTitle_Length_Is_Not_Less_Than_Max" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -820,7 +864,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Demo (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo (4)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -884,7 +928,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="SignInTest.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo.demo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -896,8 +940,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SignInTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="tests.Demo" />
+      <option name="METHOD_NAME" value="demo" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -999,19 +1043,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.Demo" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.SignInTest.test" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.Demo (1)" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.AddPostTest.postOffering" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Demo (4)" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.Demo.demo" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.AddPostTest.postTitle_Length_Is_Not_Less_Than_Max" />
       <item index="4" class="java.lang.String" itemvalue="TestNG.AddPostTest" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.AddPostTest.postRequirement" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.AddPostTest.postOffering" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.AddPostTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.AddPostTest.postRequirement" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.AddPostTest.postOffering" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Demo (1)" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.SignInTest.test" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.AddPostTest.postOffering" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.AddPostTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.Demo.demo" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.AddPostTest.postTitle_Length_Is_Not_Less_Than_Max" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.Demo (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -1029,38 +1073,46 @@
       <option name="presentableId" value="Default" />
       <updated>1501151445907</updated>
     </task>
+    <task id="LOCAL-00001" summary="Post Validations">
+      <created>1505195060925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1505195060928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddPostTest - 2017.09.11 at 18h 18m 52s.xml">
+    <history-entry file="AddPostTest - 2017.09.12 at 14h 29m 59s.xml">
       <configuration name="AddPostTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2017.09.11 at 18h 20m 36s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 14h 31m 43s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2017.09.11 at 18h 22m 29s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 14h 34m 44s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2017.09.11 at 18h 24m 30s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 14h 54m 15s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2017.09.11 at 18h 39m 17s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 14h 56m 41s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddPostTest - 2017.09.11 at 18h 49m 23s.xml">
-      <configuration name="AddPostTest" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 15h 00m 10s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Demo - 2017.09.11 at 18h 16m 01s.xml">
-      <configuration name="Demo" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 15h 02m 23s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Demo - 2017.09.11 at 18h 45m 38s.xml">
-      <configuration name="Demo" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 15h 05m 31s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Demo - 2017.09.11 at 18h 52m 33s.xml">
-      <configuration name="Demo" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 15h 12m 39s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Demo - 2017.09.11 at 18h 55m 08s.xml">
-      <configuration name="Demo" configurationId="TestNG" />
+    <history-entry file="AddPostTest_postOffering - 2017.09.12 at 15h 15m 08s.xml">
+      <configuration name="AddPostTest.postOffering" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1078,13 +1130,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.49546143" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34982935" sideWeight="0.505295" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34982935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34982935" sideWeight="0.494705" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49488056" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1150,7 +1202,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1331,16 +1383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/repository/Dashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="32" column="68" lean-forward="false" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.5.1/ddf46eaecf7d236d509c4257335e55dac9365637/selenium-remote-driver-3.5.1-sources.jar!/org/openqa/selenium/remote/RemoteWebElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1385,14 +1427,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/DemoTwo.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/repository/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/repository/Industry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -1405,13 +1439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/JoinNowValidations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="66" column="39" lean-forward="false" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1457,22 +1484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SignInValidations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/JoinNowTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/StartApplicaton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-136">
@@ -1497,29 +1508,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AddPostTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/repository/AddPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/repository/AddPost.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/repository/People.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="-637">
+          <caret line="98" column="72" lean-forward="false" selection-start-line="98" selection-start-column="72" selection-end-line="98" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/repository/Dashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="69" column="1" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        <state relative-caret-position="-467">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/SignInValidations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="203" column="20" lean-forward="false" selection-start-line="203" selection-start-column="20" selection-end-line="203" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/JoinNowValidations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="66" column="39" lean-forward="false" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/JoinNowTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AddPostTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

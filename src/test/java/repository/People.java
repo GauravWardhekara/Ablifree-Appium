@@ -94,17 +94,19 @@ public class People {
     public AndroidElement RemainingPosts;
 
     /**Cross button in People Screen*/
-    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/"
+    /*@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/"
             + "android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/"
             + "android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/"
-            + "android.support.v4.view.ViewPager/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageButton[3]")
+            + "android.support.v4.view.ViewPager/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageButton[3]")*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/fab_expand_menu_button")
     public AndroidElement CrossButton;
 
     /**Add button in People Screen*/
-    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/"
-            + "android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/"
-            + "android.support.v4.view.ViewPager/android.widget.LinearLayout/android.support.v4.view.ViewPager/"
-            + "android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageButton")
+//    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/"
+//            + "android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/"
+//            + "android.support.v4.view.ViewPager/android.widget.LinearLayout/android.support.v4.view.ViewPager/"
+//            + "android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageButton")
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/fab_expand_menu_button")
     public AndroidElement AddButton;
 
     /**Applied Filter count in People Screen*/
