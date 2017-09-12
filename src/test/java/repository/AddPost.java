@@ -13,7 +13,7 @@ public class AddPost {
     @SuppressWarnings("unused")
     private AppiumDriver<AndroidElement> driver;
     public AddPost(AppiumDriver<AndroidElement> driver) {
-        this.driver = (AppiumDriver<AndroidElement>) driver;
+        this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
@@ -41,7 +41,7 @@ public class AddPost {
 
     /**Post Target Industries selector in Add Posts Screen*/
     @AndroidFindBy(id = "com.bluemark.ablifree:id/rl_add_target_industry")
-    public AndroidElement TargetIndustriesSelctor;
+    public AndroidElement TargetIndustriesSector;
 
     /**Post Target Industries Description in Add Posts Screen*/
     @AndroidFindBy(id = "com.bluemark.ablifree:id/tv_target_industries_description")
@@ -75,7 +75,32 @@ public class AddPost {
     @AndroidFindBy(id = "com.bluemark.ablifree:id/btn_add_post")
     public AndroidElement PostButton;
 
-    /**Post Title field in Add Posts Screen*/
-    @AndroidFindBy(id = "com.bluemark.ablifree:id/et_post_title")
+    /**Add Post Error Toast*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/snackbar_text")
     public AndroidElement ErrorMessage;
+
+    /**Image Alert Text*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/ld_message")
+    public AndroidElement ImageAlertMessage;
+
+    /**Image Alert Gallery Button*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/ld_btn_no")
+    public AndroidElement ImageAlertGalleryButton;
+
+    /**Image Alert Camera Button*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/ld_btn_yes")
+    public AndroidElement ImageAlertCameraButton;
+
+    /**Back Button*/
+    @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]")
+    public AndroidElement BackButton;
+
+    /**Yes Button on Alert*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/ld_btn_no")
+    public AndroidElement AlertYesButton;
+
+    /**No Button on Alert*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/ld_btn_yes")
+    public AndroidElement AlertNoButton;
+
 }
