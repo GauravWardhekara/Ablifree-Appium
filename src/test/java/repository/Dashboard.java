@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Dashboard {
     private AppiumDriver<AndroidElement> driver;
     public Dashboard(AppiumDriver<AndroidElement> driver) {
-        this.driver = (AppiumDriver<AndroidElement>) driver;
+        this.driver =  driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
@@ -29,7 +29,7 @@ public class Dashboard {
     @AndroidFindBy(id = "com.bluemark.ablifree:id/ll_posts")
     public AndroidElement PostsButton;
 
-    /**Share Profile button on Dashboard.*/
+    /**Share EditProfile button on Dashboard.*/
     @AndroidFindBy(id = "com.bluemark.ablifree:id/ll_share_profile")
     public AndroidElement SharePofileButton;
 
@@ -39,9 +39,17 @@ public class Dashboard {
 
     /**Notification button on Dashboard.*/
     @AndroidFindBy(id = "com.bluemark.ablifree:id/iv_nearby_people")
-    public AndroidElement Notification;
+    public AndroidElement NotificationButton;
 
     /**Search button on Dashboard.*/
     @AndroidFindBy(id = "com.bluemark.ablifree:id/iv_search")
-    public AndroidElement Search;
+    public AndroidElement SearchButton;
+
+    /**Search button on Dashboard.*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/ll_my_profile")
+    public AndroidElement MyProfileButton;
+
+    /**Search button on Dashboard.*/
+    @AndroidFindBy(id = "com.bluemark.ablifree:id/tv_invite")
+    public AndroidElement InviteButton;
 }

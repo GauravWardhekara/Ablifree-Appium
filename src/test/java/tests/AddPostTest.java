@@ -10,10 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import repository.*;
-
 import java.util.concurrent.TimeUnit;
-
-import static java.lang.Boolean.FALSE;
 
 public class AddPostTest {
     public AppiumDriver<AndroidElement> driver;

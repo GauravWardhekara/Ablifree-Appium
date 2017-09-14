@@ -10,7 +10,7 @@ public class MenuTab {
     @SuppressWarnings("unused")
     private AppiumDriver<AndroidElement> driver;
     public MenuTab(AppiumDriver<AndroidElement> driver) {
-        this.driver = (AppiumDriver<AndroidElement>) driver;
+        this.driver =  driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
     /**People Tab on Tab bar*/
@@ -31,7 +31,7 @@ public class MenuTab {
     @AndroidFindBy(xpath =  "/android.widget.LinearLayout/android.widget.HorizontalScrollView"
             + "/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[3]")
     public AndroidElement MyFavouritesTab;
-    /**Profile Tab on Tab bar*/
+    /**EditProfile Tab on Tab bar*/
     @AndroidFindBy(xpath =  "/android.widget.LinearLayout/android.widget.HorizontalScrollView"
             + "/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[5]")
     public AndroidElement ProfileTab;
