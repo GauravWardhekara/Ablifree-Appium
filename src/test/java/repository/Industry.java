@@ -15,7 +15,7 @@ public class Industry {
     @SuppressWarnings("unused")
     private AppiumDriver<AndroidElement> driver;
     public Industry(AppiumDriver<AndroidElement> driver) {
-        this.driver = (AppiumDriver<AndroidElement>) driver;
+        this.driver =  driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
@@ -41,6 +41,7 @@ public class Industry {
 
     /**
      * Select Industry
+     * @param industry Accepts Industry as String.
      */
     public void selectIndustry(String industry)	{
         Iterator<AndroidElement> Select = IndustryName.iterator();

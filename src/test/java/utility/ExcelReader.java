@@ -26,12 +26,12 @@ public class ExcelReader {
      */
     public ExcelReader(String fileName, String sheetName) {
         try {
-            if (fileName.indexOf("xlsx") < 0) { //for .xls format
+            if (!fileName.indexOf("xlsx")) { //for .xls format
                 wb = new HSSFWorkbook(new FileInputStream(new File(fileName)));
                 ws = wb.getSheet(sheetName);
             } else { //for .xlsx format
                 wb = new XSSFWorkbook(fileName);
-                ws = (XSSFSheet) wb.getSheet(sheetName);
+                ws = wb.getSheet(sheetName);
             }
         } catch (IOException io) {
             System.err.println("Invalid file '" + fileName
@@ -47,7 +47,7 @@ public class ExcelReader {
      *            starting with 0 index
      * @param columnIndex
      *            starting with 0 index
-     * @return
+     * @return Cell value.
      */
     public String getCell(int rowIndex, int columnIndex) {
         Cell cell = null;

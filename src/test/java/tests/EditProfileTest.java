@@ -32,7 +32,7 @@ public class EditProfileTest {
         TouchAction scroll = new TouchAction(driver);
         scroll.longPress(editProfile.MobileNumber).moveTo(50,50).release().perform();
         editProfile.select_Gender("Male");
-        editProfile.select_Maritul_Status("Married");
+        editProfile.select_Marital_Status("Single");
         editProfile.Country.clear();
         editProfile.Country.setValue("India");
         editProfile.State.clear();

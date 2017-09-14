@@ -3,16 +3,14 @@ package repository;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+import java.util.List;
 
 public class EditProfile {
     @SuppressWarnings("unused")
@@ -59,7 +57,7 @@ public class EditProfile {
     public AndroidElement MaritalStatusSelctor;
 
     /**Country field on Edit Profile screen**/
-    @AndroidFindBy(id ="tcom.bluemark.ablifree:id/edt_country")
+    @AndroidFindBy(id ="com.bluemark.ablifree:id/edt_country")
     public AndroidElement Country;
 
     /**State field on Edit Profile screen**/
@@ -82,41 +80,54 @@ public class EditProfile {
     @AndroidFindBy(id ="com.bluemark.ablifree:id/tv_industry_name")
     public AndroidElement SelectIndustry;
 
+    /**Gender List on Edit Profile screen**/
+    @AndroidFindBy(id = "android:id/text1")
+    public List<AndroidElement> GenderList;
+
+    /**Marital Status on Edit Profile screen**/
+    @AndroidFindBy(id = "android:id/text1")
+    public List<AndroidElement> StatusList;
+
+    /**
+     * @param gender accepts Gender as String.
+     * Selects gender of the user on Edit Profile screen.
+     * **/
     public void select_Gender(String gender){
         GenderSelctor.click();
         switch (gender){
-            case "Male":driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android" +
-                    ".widget.ListView/android.widget.TextView[2]").click();
+            case "Male":GenderList.get(1).click();
                 break;
-            case "Female":driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android" +
-                    ".widget.ListView/android.widget.TextView[3]").click();
+            case "Female":GenderList.get(2).click();
                 break;
-            case "Other":driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android" +
-                    ".widget.ListView/android.widget.TextView[4]").click();
+            case "Other":GenderList.get(3).click();
                 break;
-            default:driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android" +
-                    ".widget.ListView/android.widget.TextView[1]").click();
+            default:GenderList.get(0).click();
                 break;
         }
     }
 
-    public void select_Maritul_Status(String status){
-        GenderSelctor.click();
+    /**
+     * @param status accepts Marital Status as String.
+     * Selects Marital Status of the user on Edit Profile screen.
+     * **/
+    public void select_Marital_Status(String status){
+        MaritalStatusSelctor.click();
         switch (status){
-            case "Single":driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android" +
-                    ".widget.ListView/android.widget.TextView[2]").click();
+            case "Single":StatusList.get(1).click();
                 break;
-            case "Married":driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android" +
-                    ".widget.ListView/android.widget.TextView[3]").click();
+            case "Married":StatusList.get(2).click();
                 break;
-            default:driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android" +
-                    ".widget.ListView/android.widget.TextView[1]").click();
+            default:StatusList.get(0).click();
                 break;
         }
     }
 
+    /**
+     * @param industry accepts Industry as String.
+     * Selects Industry of the user on Edit Profile screen.
+     * @throws Exception if fail.
+     **/
     public void select_Industry (String industry)throws Exception{
-        //Industry.clear();
         TouchAction touch = new TouchAction(driver);
         touch.longPress(Industry, Duration.ofSeconds(8)).release().tap(Industry)
                 .tap(Industry).perform();

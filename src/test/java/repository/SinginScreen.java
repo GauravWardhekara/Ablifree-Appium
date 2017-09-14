@@ -11,7 +11,7 @@ public class SinginScreen {
     private AppiumDriver<AndroidElement> driver;
 
     public SinginScreen(AppiumDriver<AndroidElement> driver) {
-        this.driver = (AppiumDriver<AndroidElement>) driver;
+        this.driver =  driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
     /**Allow button of Access Contact alert on Join Now screen*/
@@ -51,13 +51,19 @@ public class SinginScreen {
     @AndroidFindBy(id = "com.bluemark.ablifree:id/snackbar_action")
     public AndroidElement ErrorDismissButton;
 
-    /**Sign In using Email Address & Password*/
+    /**Sign In using Mobile Number and Password
+     * @param email accepts mobile no as String.
+     * @param password accepts password as String.
+     **/
     public void SignInWithEmail(String email, String password){
         EmailAddress.replaceValue(email);
         Password.replaceValue(password);
         SignInButton.click();
     }
-    /**Sign In using Mobile Number & Password*/
+    /**Sign In using Mobile Number and Password
+     * @param mobileno accepts mobile no as String.
+     * @param password accepts password as String.
+     **/
     public void SignInWithMobile(String mobileno, String password){
         EmailAddress.replaceValue("");
         MobileNumber.clear();

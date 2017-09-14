@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 import io.appium.java_client.TouchAction;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -34,7 +33,7 @@ public class Demo {
         TouchAction scroll = new TouchAction(driver);
         scroll.longPress(editProfile.MobileNumber).moveTo(50,50).release().perform();
         editProfile.select_Gender("Male");
-        editProfile.select_Maritul_Status("Married");
+        editProfile.select_Marital_Status("Married");
         editProfile.Country.clear();
         editProfile.Country.setValue("India");
         editProfile.State.clear();
