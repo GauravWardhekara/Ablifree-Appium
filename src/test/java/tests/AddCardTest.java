@@ -11,13 +11,14 @@ import repository.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class AddCard {
+public class AddCardTest {
     public AppiumDriver<AndroidElement> driver;
 
     @BeforeTest
     public void setUp() throws Exception {
 
         /*Initialize Driver*/
+        //noinspection unchecked
         driver =  (AppiumDriver<AndroidElement>) DriverInit.getInstance().getDriver();
 
         LaunchScreen launch = new LaunchScreen(driver);

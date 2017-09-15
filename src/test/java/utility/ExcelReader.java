@@ -26,7 +26,7 @@ public class ExcelReader {
      */
     public ExcelReader(String fileName, String sheetName) {
         try {
-            if (!fileName.indexOf("xlsx")) { //for .xls format
+            if (!fileName.contains("xlsx")) { //for .xls format
                 wb = new HSSFWorkbook(new FileInputStream(new File(fileName)));
                 ws = wb.getSheet(sheetName);
             } else { //for .xlsx format
